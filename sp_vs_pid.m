@@ -39,8 +39,8 @@ PID.Tf = 0;
 
 % Design Smith predictor
 SP = struct;
-SP.Kc = 1/Km;
-SP.Ti = T1m;
+SP.Kc = 0.25;
+SP.Ti = 376/60;
 SP.Td = 0;
 SP.Tf = 0;
 
