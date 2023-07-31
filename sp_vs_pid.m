@@ -25,16 +25,16 @@ T1m = T1;
 % Standard PI design rules
 % Kc = 1/Km * T1m/(T1m + theta_m);
 
-% Design PI controller
+% Design PI controller - SIMC Tuning Rule
 PI = struct;
-PI.Kc = 0.05;
-PI.Ti = 376/60;
+PI.Kc = 0.083;
+PI.Ti = 8.3;
 
-% Design PID controller
+% Design PID controller - SIMC Tuning Rule
 PID = struct;
-PID.Kc = 0.05;
-PID.Ti = 376/60;
-PID.Td = 0;
+PID.Kc = 0.067;
+PID.Ti = 5;
+PID.Td = 3.33;
 PID.Tf = 0;
 
 % Design Smith predictor
